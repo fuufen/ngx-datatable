@@ -1,5 +1,5 @@
 /**
- * angular2-data-table v"13.1.0" (https://github.com/swimlane/angular2-data-table)
+ * angular2-data-table v"13.1.0-jengdal" (https://github.com/swimlane/angular2-data-table)
  * Copyright 2016
  * Licensed under MIT
  */
@@ -552,8 +552,8 @@ var DataTableBodyCellComponent = /** @class */ (function () {
             return html;
         return html.replace(/<\/?[^>]+(>|$)/g, '');
     };
-    DataTableBodyCellComponent.prototype.onTreeAction = function (row) {
-        this.treeAction.emit();
+    DataTableBodyCellComponent.prototype.onTreeAction = function () {
+        this.treeAction.emit(this.row);
     };
     DataTableBodyCellComponent.prototype.calcLeftMargin = function (column, row) {
         var levelIndent = column.treeLevelIndent != null ? column.treeLevelIndent : 50;

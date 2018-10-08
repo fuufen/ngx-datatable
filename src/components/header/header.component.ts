@@ -134,7 +134,7 @@ export class DataTableHeaderComponent {
   _offsetX: number;
   _columns: any[];
   _headerHeight: string;
-  _styleByGroup = {
+  _styleByGroup: {[key: string]: {[key: string]: string}} = {
     left: {},
     center: {},
     right: {}

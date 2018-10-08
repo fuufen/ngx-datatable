@@ -118,7 +118,7 @@ export class DataTableBodyRowComponent implements DoCheck {
   _offsetX: number;
   _columns: any[];
   _innerWidth: number;
-  _groupStyles = {
+  _groupStyles: {[key: string]: {[key: string]: string}}  = {
     left: {},
     center: {},
     right: {}
